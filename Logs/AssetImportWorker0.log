@@ -15,7 +15,7 @@ E:/Projects/GitHub Repositories/Unity/RTS-Game-Repository
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-2203
+3926
 Successfully changed project path to: E:/Projects/GitHub Repositories/Unity/RTS-Game-Repository
 E:/Projects/GitHub Repositories/Unity/RTS-Game-Repository
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ E:/Projects/GitHub Repositories/Unity/RTS-Game-Repository
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9904] Host "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 2668338964 [EditorId] 2668338964 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CQ8RSTA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12064] Host "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 2214009720 [EditorId] 2214009720 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CQ8RSTA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9904] Host "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 2668338964 [EditorId] 2668338964 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CQ8RSTA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12064] Host "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 2214009720 [EditorId] 2214009720 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CQ8RSTA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 244.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 63.00 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path E:/Unity/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
@@ -67,13 +67,613 @@ Initialize mono
 Mono path[0] = 'E:/Unity/Editor/2021.3.15f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Unity/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: E:/Unity/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.218133 seconds.
+Registered in 0.003551 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1758.88 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 100.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.307 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1309ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (940ms)
+			LoadAssemblies (164ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (234ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (556ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (105ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (101ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (249ms)
+				ProcessInitializeOnLoadMethodAttributes (97ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005077 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.933 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1935ms)
+		BeginReloadAssembly (333ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (145ms)
+		EndReloadAssembly (1382ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (380ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (726ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (562ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1672 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (21.9 KB). Loaded Objects now: 2165.
+Memory consumption went from 93.5 MB to 93.4 MB.
+Total: 4.295400 ms (FindLiveObjects: 0.213000 ms CreateObjectMapping: 0.105900 ms MarkObjects: 3.942700 ms  DeleteObjects: 0.032200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9335.092428 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c7a5ec9dcfcabe105b07342aaefb6c') in 0.168468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b06ea3094496eea15d551f1f190503') in 0.028615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af55dfcba8632d2d002efa395ceee18d') in 0.031411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Prefabs/Buildings/Tower.prefab
+  artifactKey: Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Tower.prefab using Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f36adce48ddcf901d66bc7bdac5c33') in 0.034019 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003924 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.468 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2475ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (2155ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (341ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (1475ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (44ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (147ms)
+				ProcessInitializeOnLoadAttributes (1172ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1653 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (24.5 KB). Loaded Objects now: 2176.
+Memory consumption went from 95.9 MB to 95.9 MB.
+Total: 5.306600 ms (FindLiveObjects: 0.263200 ms CreateObjectMapping: 0.251100 ms MarkObjects: 4.751800 ms  DeleteObjects: 0.038200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 311.018874 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc806d70ad30f694f2fb84e2be69a06a') in 0.086272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.860927 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6175d8911d4aa2defa0b429a562b77e') in 0.016910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.607628 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85df977343d95439d4a5dc3a4eb4c64b') in 0.026639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.908102 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb74f25863e7d2d0c494db8cf365f27') in 0.022346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.653879 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984b16ae882f9f8e6990a6f525258f69') in 0.023468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f7508c2d7ee406b9d68dc90f273e13') in 0.026276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed30a543a6a60468769e92c7cfa0d35') in 0.022428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Buildings/Tower.prefab
+  artifactKey: Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Tower.prefab using Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b30eac0dccb2c2a6a8d8e894104929') in 0.017632 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007100 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.870 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1872ms)
+		BeginReloadAssembly (217ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (1477ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (374ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (105ms)
+			SetupLoadedEditorAssemblies (736ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (49ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (168ms)
+				ProcessInitializeOnLoadAttributes (469ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1653 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (24.7 KB). Loaded Objects now: 2179.
+Memory consumption went from 96.0 MB to 95.9 MB.
+Total: 4.819700 ms (FindLiveObjects: 0.230000 ms CreateObjectMapping: 0.176100 ms MarkObjects: 4.385500 ms  DeleteObjects: 0.026400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004283 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.253 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1254ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (969ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (464ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (326ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1653 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (24.8 KB). Loaded Objects now: 2182.
+Memory consumption went from 96.0 MB to 96.0 MB.
+Total: 3.530400 ms (FindLiveObjects: 0.197200 ms CreateObjectMapping: 0.094200 ms MarkObjects: 3.213300 ms  DeleteObjects: 0.024000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13.182919 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19a394ca1f44b827f333f2ebf0ddb152') in 0.101140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18b7f60232e712940bc3af74049b004') in 0.026165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ffa9e9110b40099d5304a7683c16cb6') in 0.029425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Prefabs/Buildings/Tower.prefab
+  artifactKey: Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Tower.prefab using Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236999e155e9d20f4e07277dcb665eca') in 0.031724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.142246 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c32daec4eff3f807f392be70f406ba8') in 0.017812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.347079 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d545e2acb67dea71f8697ea27bcccc4') in 0.016509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.985834 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6202b2c13954a84adacff2e09643261f') in 0.021730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.117077 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f151569a0097cb9f679d0ae3058c8d70') in 0.017398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.651438 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee849cb470dca72779b7e46daf9de3e4') in 0.026821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.277695 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32502d8be38bea99579d1c1fa49df5ca') in 0.018599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.140552 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7bf1d465a71fc0f0ba6a585ee4e1700') in 0.017652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.253338 seconds.
+  path: Assets/Prefabs/Buildings/Tower.prefab
+  artifactKey: Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Tower.prefab using Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b0afb24f0dd125608bca05ba6e9321') in 0.018129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.184014 seconds.
+  path: Assets/Prefabs/Buildings/Tower.prefab
+  artifactKey: Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Tower.prefab using Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1210bd950cb338e5b6e16a0c216fcf4') in 0.033523 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004669 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.884 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1886ms)
+		BeginReloadAssembly (226ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1447ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (346ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (716ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (39ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (491ms)
+				ProcessInitializeOnLoadMethodAttributes (96ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1653 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (24.6 KB). Loaded Objects now: 2185.
+Memory consumption went from 96.0 MB to 96.0 MB.
+Total: 6.443800 ms (FindLiveObjects: 0.633500 ms CreateObjectMapping: 0.143300 ms MarkObjects: 5.625100 ms  DeleteObjects: 0.036800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 119.135266 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a62609f3cf955b00ba979f26d489cb3') in 0.099077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587f84b01e71de34cad799ad114bb685') in 0.027578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd62d4ef4abe9df0bfa5988ae82836197') in 0.027019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Buildings/Tower.prefab
+  artifactKey: Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Tower.prefab using Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e835e6c76f9c6fbbd691c23e765ad98') in 0.023498 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003375 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.937 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1938ms)
+		BeginReloadAssembly (256ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1484ms)
+			LoadAssemblies (162ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (541ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (625ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1653 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (26.7 KB). Loaded Objects now: 2188.
+Memory consumption went from 96.0 MB to 96.0 MB.
+Total: 4.361500 ms (FindLiveObjects: 0.209900 ms CreateObjectMapping: 0.095600 ms MarkObjects: 4.025900 ms  DeleteObjects: 0.028600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7.423988 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b2f34aa968ef2933033fe9b9bc7745') in 0.118571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9097298c968fff96817e1ae6b0a23da') in 0.022910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840b24448382d52a429f893a089d9811') in 0.031952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Buildings/Tower.prefab
+  artifactKey: Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Tower.prefab using Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9a800f25fb6c8a1d5063dd0ef14a1a') in 0.030515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.228468 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f14cfff27c9922362c1cec4bf40e6de') in 0.022304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.323696 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d6488fe043eeabcfbfa4683cf5fb6e') in 0.033826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.998648 seconds.
+  path: Assets/Prefabs/Buildings/House.prefab
+  artifactKey: Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/House.prefab using Guid(7f0b00dd3e284fe42a4eecc60a342a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c4ebd0d87afea5981d217218d4b86e') in 0.026942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.565794 seconds.
+  path: Assets/Prefabs/Buildings/Tower.prefab
+  artifactKey: Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Tower.prefab using Guid(4e795d7833b3fc34ea757ea1f8adf8a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f565a4daf8c47fd6eb0135c65c06ce9') in 0.026517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.319486 seconds.
+  path: Assets/Prefabs/Buildings/Farm.prefab
+  artifactKey: Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Farm.prefab using Guid(49e36ae47fe58fa47a26fe2b43dddffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041ade1598d3a1e30874ff86e8357122') in 0.017098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Buildings/FarmHouse.prefab
+  artifactKey: Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/FarmHouse.prefab using Guid(a493a2a06a83f1a4fa096a20117df9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01dc0c7f49b2d119388bbb70f50a82e6') in 0.028373 seconds 

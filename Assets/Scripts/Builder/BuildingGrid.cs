@@ -8,11 +8,13 @@ namespace Builder
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private float rayDistance = 20f;
 
+        private Building[,] grid;
         private Camera mainCamera;
         private Building placingBuilding;
 
         private void Start()
         {
+            grid = new Building[gridSize.x, gridSize.y];
             mainCamera = Camera.main;
         }
 
@@ -25,10 +27,26 @@ namespace Builder
                 var x = Mathf.RoundToInt(hitInfo.point.x);
                 var z = Mathf.RoundToInt(hitInfo.point.z);
                 placingBuilding.transform.position = new Vector3(x, 0, z);
-                //TODO: Move to some player control script
-                if (Input.GetMouseButtonDown(0)) 
-                    PlaceBuilding();
+                var canPlace = !(x < 0 || x > gridSize.x - placingBuilding.Size.x 
+                                       || z < 0 || z > gridSize.y - placingBuilding.Size.y);
+                if (canPlace) canPlace = IsSpaceAvailable(x, z);
+                placingBuilding.SetAvailableColor(canPlace);
+                if (canPlace && Input.GetMouseButtonDown(0)) 
+                    PlaceBuilding(x, z);
             }
+        }
+
+        private bool IsSpaceAvailable(int xPosition, int zPosition)
+        {
+            for (int x = 0; x < placingBuilding.Size.x; x++)
+            {
+                for (int y = 0; y < placingBuilding.Size.y; y++)
+                {
+                    if (grid[xPosition + x, zPosition + y] != null) return false;
+                }
+            }
+
+            return true;
         }
 
         public void StartPlacingBuilding(Building building)
@@ -37,8 +55,15 @@ namespace Builder
             placingBuilding = Instantiate(building);
         }
 
-        public void PlaceBuilding()
+        private void PlaceBuilding(int xPosition, int zPosition)
         {
+            for (int x = 0; x < placingBuilding.Size.x; x++)
+            {
+                for (int y = 0; y < placingBuilding.Size.y; y++)
+                {
+                    grid[xPosition + x, zPosition + y] = placingBuilding;
+                }
+            }
             placingBuilding = null;
         }
     }
