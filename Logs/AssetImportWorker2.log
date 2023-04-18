@@ -9,11 +9,11 @@ E:\Unity\Editor\2021.3.15f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker2
 -projectPath
 E:/Projects/GitHub Repositories/Unity/RTS-Game-Repository
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker2.log
 -srvPort
 2203
 Successfully changed project path to: E:/Projects/GitHub Repositories/Unity/RTS-Game-Repository
@@ -47,11 +47,11 @@ E:/Projects/GitHub Repositories/Unity/RTS-Game-Repository
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9904] Host "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 2668338964 [EditorId] 2668338964 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CQ8RSTA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7760] Host "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 1618804879 [EditorId] 1618804879 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CQ8RSTA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9904] Host "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 2668338964 [EditorId] 2668338964 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CQ8RSTA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7760] Host "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 1618804879 [EditorId] 1618804879 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CQ8RSTA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 244.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 5263.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path E:/Unity/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
@@ -63,17 +63,3 @@ Direct3D:
     Vendor:   Intel
     VRAM:     4046 MB
     Driver:   31.0.101.2111
-Initialize mono
-Mono path[0] = 'E:/Unity/Editor/2021.3.15f1/Editor/Data/Managed'
-Mono path[1] = 'E:/Unity/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'E:/Unity/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: E:/Unity/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: E:/Unity/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.218133 seconds.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1758.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
