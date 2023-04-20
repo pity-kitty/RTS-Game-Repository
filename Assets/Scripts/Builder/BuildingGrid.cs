@@ -6,7 +6,7 @@ namespace Builder
     {
         [SerializeField] private Vector2Int gridSize;
         [SerializeField] private LayerMask groundLayer;
-        [SerializeField] private float rayDistance = 20f;
+        [SerializeField] private float rayDistance = 50f;
 
         private Building[,] grid;
         private Camera mainCamera;
@@ -64,6 +64,7 @@ namespace Builder
                     grid[xPosition + x, zPosition + y] = placingBuilding;
                 }
             }
+            placingBuilding.EnableNavMeshObstacle();
             placingBuilding = null;
         }
     }

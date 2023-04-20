@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 namespace Builder
 {
@@ -6,13 +7,9 @@ namespace Builder
     {
         [SerializeField] private Vector2Int size = Vector2Int.one;
         [SerializeField] private Renderer mainRenderer;
+        [SerializeField] private NavMeshObstacle navMeshObstacle;
 
         public Vector2Int Size => size;
-
-        public void SetAvailableColor(bool state)
-        {
-            mainRenderer.material.color = state ? Color.white : Color.red;
-        }
 
         private void OnDrawGizmos()
         {
@@ -25,6 +22,16 @@ namespace Builder
                         new Vector3(1, 0.1f, 1));
                 }
             }
+        }
+
+        public void SetAvailableColor(bool state)
+        {
+            mainRenderer.material.color = state ? Color.white : Color.red;
+        }
+
+        public void EnableNavMeshObstacle()
+        {
+            navMeshObstacle.enabled = true;
         }
     }
 }

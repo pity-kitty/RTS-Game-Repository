@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1224001001946121108}
   - component: {fileID: 154903607846840198}
+  - component: {fileID: 1821300307}
   m_Layer: 0
   m_Name: FarmHouse
   m_TagString: Untagged
@@ -45,8 +46,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027c083cb0c8418a90c5753890488962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 2, y: 1}
+  size: {x: 2, y: 2}
   mainRenderer: {fileID: 7067482041192520588}
+  navMeshObstacle: {fileID: 1821300307}
+--- !u!208 &1821300307
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5200238599523511308}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.9, y: 1, z: 0.75}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 1, y: 1, z: 1}
+  m_TimeToStationary: 0.5
 --- !u!1001 &7081547902915976760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64,15 +82,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4367965935911802, guid: 2c121b1857a760c4f9ef7b0e4b09864c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4367965935911802, guid: 2c121b1857a760c4f9ef7b0e4b09864c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4367965935911802, guid: 2c121b1857a760c4f9ef7b0e4b09864c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4367965935911802, guid: 2c121b1857a760c4f9ef7b0e4b09864c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -84,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4367965935911802, guid: 2c121b1857a760c4f9ef7b0e4b09864c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4367965935911802, guid: 2c121b1857a760c4f9ef7b0e4b09864c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -112,6 +130,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4367965935911802, guid: 2c121b1857a760c4f9ef7b0e4b09864c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367965935911802, guid: 2c121b1857a760c4f9ef7b0e4b09864c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

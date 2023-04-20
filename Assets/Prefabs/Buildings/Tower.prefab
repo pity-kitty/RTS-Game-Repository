@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8195382548414783836}
   - component: {fileID: 8135693655721337649}
+  - component: {fileID: 926753001}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -47,6 +48,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: {x: 1, y: 1}
   mainRenderer: {fileID: 1455188832581970146}
+  navMeshObstacle: {fileID: 926753001}
+--- !u!208 &926753001
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8031164609441961230}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.8, y: 1.25, z: 0.8}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.5, y: 1.25, z: 0.5}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1469690237303398920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64,15 +82,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4839559421732704, guid: dd3aacc720f19b24eb93f961bb9b5057, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4839559421732704, guid: dd3aacc720f19b24eb93f961bb9b5057, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4839559421732704, guid: dd3aacc720f19b24eb93f961bb9b5057, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4839559421732704, guid: dd3aacc720f19b24eb93f961bb9b5057, type: 3}
       propertyPath: m_LocalPosition.x
