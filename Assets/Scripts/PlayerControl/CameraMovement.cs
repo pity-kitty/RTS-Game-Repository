@@ -25,20 +25,20 @@ namespace PlayerControl
         {
             var position = transform.position;
 
-            if (Input.GetKey(KeyCode.UpArrow) || Input.mousePosition.y >= Screen.height - border)
+            if (Input.GetKey(KeyCode.UpArrow)) //|| Input.mousePosition.y >= Screen.height - border)
             {
                 position.z += speed * Time.deltaTime;
             }
-            if (Input.GetKey(KeyCode.DownArrow) || Input.mousePosition.y <= border)
+            if (Input.GetKey(KeyCode.DownArrow))// || Input.mousePosition.y <= border)
             {
                 position.z -= speed * Time.deltaTime;
             }
 
-            if (Input.GetKey(KeyCode.RightArrow) || Input.mousePosition.x >= Screen.width - border)
+            if (Input.GetKey(KeyCode.RightArrow))// || Input.mousePosition.x >= Screen.width - border)
             {
                 position.x += speed * Time.deltaTime;
             }
-            if (Input.GetKey(KeyCode.LeftArrow) || Input.mousePosition.x <= border)
+            if (Input.GetKey(KeyCode.LeftArrow))// || Input.mousePosition.x <= border)
             {
                 position.x -= speed * Time.deltaTime;
             }

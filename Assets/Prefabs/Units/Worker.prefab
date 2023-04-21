@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 670831247285632096}
   - component: {fileID: 670831247285632110}
   - component: {fileID: 670831247285632111}
+  - component: {fileID: 2696377448218802327}
   m_Layer: 6
   m_Name: Worker
   m_TagString: Untagged
@@ -49,6 +50,7 @@ MonoBehaviour:
   navMeshAgent: {fileID: 670831247285632111}
   health: 100
   speed: 1
+  mainRenderer: {fileID: 670831247685272013}
 --- !u!195 &670831247285632111
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -71,6 +73,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &2696377448218802327
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670831247285632109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.5, z: 0.15}
+  m_Center: {x: 0, y: 0.25, z: 0}
 --- !u!1 &670831247685272010
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +97,6 @@ GameObject:
   - component: {fileID: 670831247685272011}
   - component: {fileID: 670831247685272014}
   - component: {fileID: 670831247685272013}
-  - component: {fileID: 670831247685272012}
   m_Layer: 6
   m_Name: Visuals
   m_TagString: Untagged
@@ -133,7 +147,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 17ebe3077db163d44ae905c113ad4fa3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -155,16 +169,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &670831247685272012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670831247685272010}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
