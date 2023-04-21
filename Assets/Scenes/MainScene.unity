@@ -1222,6 +1222,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   units: []
+  unitAndGroundLayer:
+    serializedVersion: 2
+    m_Bits: 72
   unitLayer:
     serializedVersion: 2
     m_Bits: 64

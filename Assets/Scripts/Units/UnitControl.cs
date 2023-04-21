@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Units
@@ -6,14 +7,20 @@ namespace Units
     public class UnitControl : MonoBehaviour
     {
         [SerializeField] private List<Unit> units;
+        [SerializeField] private LayerMask unitAndGroundLayer;
         [SerializeField] private LayerMask unitLayer;
         [SerializeField] private float raycastDistance = 100f;
         [SerializeField] private float unitOffset = 0.5f;
         [SerializeField] private int countOfUnitsInOneLine = 5;
+        [SerializeField] private float dragThreshold = 30f;
 
         private List<Unit> selectedUnits = new ();
         private Camera mainCamera;
         private int[] unitsStandPattern;
+        private bool isCtrlHold;
+        private bool needSelectArea;
+        private Vector3 initialPosition;
+        private Vector3 initialMousePosition;
 
         private void Start()
         {
@@ -26,27 +33,55 @@ namespace Units
             if (Input.GetMouseButtonDown(0))
             {
                 SelectUnits();
-                return;
             }
             if (Input.GetMouseButtonDown(1))
             {
                 MoveUnits();
             }
+            if (needSelectArea && Input.GetMouseButtonUp(0))
+            {
+                SelectUnitsInArea();
+            }
+            if (Input.GetKeyDown(KeyCode.LeftControl)) isCtrlHold = true;
+            if (Input.GetKeyUp(KeyCode.LeftControl)) isCtrlHold = false;
         }
 
         private void SelectUnits()
         {
             if (!Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out var hitInfo, raycastDistance,
-                    unitLayer)) return;
-            var unit = hitInfo.transform.gameObject.GetComponent<Unit>();
-            if (selectedUnits.Contains(unit))
+                    unitAndGroundLayer)) return;
+            var isUnit = hitInfo.transform.gameObject.TryGetComponent<Unit>(out var unit);
+            if (!isUnit)
             {
-                selectedUnits.Remove(unit);
-                unit.SetHighlight(false);
+                if (selectedUnits.Count != 0) SetHighLightForAllUnits(false);
+                selectedUnits = new List<Unit>();
+                initialPosition = hitInfo.point;
+                initialMousePosition = Input.mousePosition;
+                needSelectArea = true;
                 return;
             }
-            selectedUnits.Add(unit);
+            needSelectArea = false;
+            switch (isCtrlHold)
+            {
+                case true when selectedUnits.Contains(unit):
+                    selectedUnits.Remove(unit);
+                    unit.SetHighlight(false);
+                    return;
+                case true:
+                    selectedUnits.Add(unit);
+                    break;
+                default:
+                    SetHighLightForAllUnits(false);
+                    selectedUnits = new List<Unit> { unit };
+                    break;
+            }
             unit.SetHighlight(true);
+        }
+
+        private void SetHighLightForAllUnits(bool state)
+        {
+            foreach (var selectedUnit in selectedUnits)
+                selectedUnit.SetHighlight(state);
         }
 
         private void MoveUnits()
@@ -72,6 +107,26 @@ namespace Units
             }
         }
 
+        private void SelectUnitsInArea()
+        {
+            needSelectArea = false;
+            if (!Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out var hitInfo)) return;
+            var endPosition = hitInfo.point;
+            var scale = initialPosition - endPosition;
+            scale.x = Mathf.Abs(scale.x);
+            scale.y = Mathf.Abs(scale.y);
+            scale.z = Mathf.Abs(scale.z);
+            var center = (initialPosition + endPosition) / 2;
+            var raycastHits = Physics.BoxCastAll(center, scale / 2, Vector3.up, Quaternion.identity,
+                float.MaxValue, unitLayer);
+            foreach (var hitResult in raycastHits)
+            {
+                var unit = hitResult.transform.gameObject.GetComponent<Unit>();
+                selectedUnits.Add(unit);
+            }
+            SetHighLightForAllUnits(true);
+        }
+
         private int[] GenerateStandPattern(int unitsCount)
         {
             var standPattern = new int[unitsCount];
@@ -84,6 +139,14 @@ namespace Units
             }
 
             return standPattern;
+        }
+
+        private void OnGUI()
+        {
+            if (!needSelectArea) return;
+            var rect = Utils.GetScreenRect(initialMousePosition, Input.mousePosition);
+            Utils.DrawScreenRect(rect, new Color(0.8f, 0.8f, 0.95f, 0.25f));
+            Utils.DrawScreenRectBorder(rect, 2, new Color(0.8f, 0.8f, 0.95f));
         }
     }
 }
