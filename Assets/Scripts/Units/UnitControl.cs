@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Units
@@ -12,7 +11,6 @@ namespace Units
         [SerializeField] private float raycastDistance = 100f;
         [SerializeField] private float unitOffset = 0.5f;
         [SerializeField] private int countOfUnitsInOneLine = 5;
-        [SerializeField] private float dragThreshold = 30f;
 
         private List<Unit> selectedUnits = new ();
         private Camera mainCamera;

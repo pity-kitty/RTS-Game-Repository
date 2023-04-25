@@ -1,10 +1,11 @@
-﻿using Units.Enums;
+﻿using Resources;
+using Units.Enums;
 
 namespace Units.Interfaces
 {
     public interface IWorkable
     {
-        public bool StartWork(WorkType work);
+        public bool StartWork(WorkType work, Resource resource);
         public void EndWork();
     }
 }
