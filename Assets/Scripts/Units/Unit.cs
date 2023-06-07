@@ -1,4 +1,5 @@
-﻿using Units.Interfaces;
+﻿using Units.Enums;
+using Units.Interfaces;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -6,12 +7,17 @@ namespace Units
 {
     public abstract class Unit : MonoBehaviour, IMovable, ISelectable
     {
-        [SerializeField] private NavMeshAgent navMeshAgent;
+        [SerializeField] protected NavMeshAgent navMeshAgent;
+        [SerializeField] private UnitType unitType;
         [SerializeField] private float health;
         [SerializeField] private float speed;
         [SerializeField] private Renderer mainRenderer;
 
+        private string guid = System.Guid.NewGuid().ToString();
         private Color defaultColor;
+
+        public string Guid => guid;
+        public UnitType UnitType => unitType;
         
         protected virtual void Start()
         {

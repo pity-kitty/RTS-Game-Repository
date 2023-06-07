@@ -35,14 +35,23 @@ namespace Resources
         {
             var collectedResources = resourceData.amountGained;
             CurrentAmount -= collectedResources;
-            if (CurrentAmount >= 0)
-                return resourceData.amountGained;
+            switch (CurrentAmount)
+            {
+                case > 0:
+                    return resourceData.amountGained;
+                case 0:
+                    SetVisualState(false);
+                    StartRecover();
+                    return resourceData.amountGained;
+            }
             collectedResources = CurrentAmount;
             CurrentAmount = 0;
+            SetVisualState(false);
+            StartRecover();
             return resourceData.amountGained + collectedResources;
         }
 
-        public void SetVisualState(bool isNormal)
+        private void SetVisualState(bool isNormal)
         {
             if (isNormal)
             {
@@ -55,7 +64,7 @@ namespace Resources
             normalState.SetActive(false);
         }
 
-        public void StartRecover()
+        private void StartRecover()
         {
             StartCoroutine(Recover());
         }
@@ -63,6 +72,7 @@ namespace Resources
         private IEnumerator Recover()
         {
             yield return new WaitForSeconds(timeToRecoverInSeconds);
+            SetVisualState(true);
             CurrentAmount = overallAmount;
         }
     }

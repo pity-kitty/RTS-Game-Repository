@@ -38,9 +38,9 @@ namespace Builder
 
         private bool IsSpaceAvailable(int xPosition, int zPosition)
         {
-            for (int x = 0; x < placingBuilding.Size.x; x++)
+            for (var x = 0; x < placingBuilding.Size.x; x++)
             {
-                for (int y = 0; y < placingBuilding.Size.y; y++)
+                for (var y = 0; y < placingBuilding.Size.y; y++)
                 {
                     if (grid[xPosition + x, zPosition + y] != null) return false;
                 }
@@ -57,9 +57,9 @@ namespace Builder
 
         private void PlaceBuilding(int xPosition, int zPosition)
         {
-            for (int x = 0; x < placingBuilding.Size.x; x++)
+            for (var x = 0; x < placingBuilding.Size.x; x++)
             {
-                for (int y = 0; y < placingBuilding.Size.y; y++)
+                for (var y = 0; y < placingBuilding.Size.y; y++)
                 {
                     grid[xPosition + x, zPosition + y] = placingBuilding;
                 }

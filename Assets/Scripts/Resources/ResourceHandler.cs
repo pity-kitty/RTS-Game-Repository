@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Resources.Enums;
+﻿using Resources.Enums;
 using UnityEngine;
 
 namespace Resources
