@@ -2,7 +2,6 @@
 using Extensions;
 using Resources.Enums;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Resources
 {
@@ -20,9 +19,6 @@ namespace Resources
 
         public ResourceType ResourceType => resourceData.resourceType;
         public float TimeToCollect => resourceData.timeToCollect;
-        public int AmountGained => resourceData.amountGained;
-        public int OverallAmount => overallAmount;
-        public float TimeToRecoverInMinutes => timeToRecoverInMinutes;
         public int CurrentAmount { get; private set; }
 
         private void Start()

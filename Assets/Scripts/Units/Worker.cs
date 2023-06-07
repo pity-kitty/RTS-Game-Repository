@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using Resources;
-using Units.Enums;
 using Units.Interfaces;
 using UnityEngine;
 
@@ -10,7 +9,6 @@ namespace Units
     {
         [SerializeField] private ResourceHandler resourceHandler;
 
-        private WorkType currentWork = WorkType.None;
         private Resource currentResource;
         private Coroutine workRoutine;
         private bool isWorking;
@@ -23,15 +21,15 @@ namespace Units
             return base.Move(position);
         }
 
-        public bool MoveToWork(Vector3 position, WorkType work, Resource resource)
+        public bool MoveToWork(Vector3 position, Resource resource)
         {
             var moveResult = base.Move(position);
             if (resource.CurrentAmount == 0) return false;
-            if (moveResult) StartCoroutine(WaitForMovement(work, resource));
+            if (moveResult) StartCoroutine(WaitForMovement(resource));
             return moveResult;
         }
 
-        private IEnumerator WaitForMovement(WorkType work, Resource resource)
+        private IEnumerator WaitForMovement(Resource resource)
         {
             var isWaiting = true;
             while (isWaiting)
@@ -44,14 +42,13 @@ namespace Units
                 isWaiting = false;
             }
 
-            StartWork(work, resource);
+            StartWork(resource);
         }
 
-        public bool StartWork(WorkType work, Resource resource)
+        public bool StartWork(Resource resource)
         {
             if (resource.CurrentAmount == 0) return false;
             currentResource = resource;
-            currentWork = work;
             workRoutine = StartCoroutine(Work());
             return true;
         }
@@ -62,7 +59,6 @@ namespace Units
             NeedWork = false;
             StopCoroutine(workRoutine);
             currentResource = null;
-            currentWork = WorkType.None;
             isWorking = false;
         }
 

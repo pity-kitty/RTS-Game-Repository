@@ -8,7 +8,6 @@ namespace Units
 {
     public class UnitControl : MonoBehaviour
     {
-        [SerializeField] private List<Unit> units;
         [SerializeField] private LayerMask unitAndGroundLayer;
         [SerializeField] private LayerMask unitLayer;
         [SerializeField] private LayerMask groundAndResourceLayer;
@@ -56,12 +55,7 @@ namespace Units
             var isUnit = hitInfo.transform.gameObject.TryGetComponent<Unit>(out var unit);
             if (!isUnit)
             {
-                if (selectedUnits.Count != 0) SetHighLightForAllUnits(false);
-                selectedUnits = new Dictionary<string, Unit>();
-                initialPosition = hitInfo.point;
-                initialMousePosition = Input.mousePosition;
-                needSelectArea = true;
-                currentUnitType = UnitType.None;
+                GroundClick(hitInfo.point);
                 return;
             }
             needSelectArea = false;
@@ -89,6 +83,16 @@ namespace Units
             unit.SetHighlight(true);
         }
 
+        private void GroundClick(Vector3 clickPosition)
+        {
+            if (selectedUnits.Count != 0) SetHighLightForAllUnits(false);
+            selectedUnits = new Dictionary<string, Unit>();
+            initialPosition = clickPosition;
+            initialMousePosition = Input.mousePosition;
+            needSelectArea = true;
+            currentUnitType = UnitType.None;
+        }
+
         private void SetHighLightForAllUnits(bool state)
         {
             foreach (var selectedUnit in selectedUnits.Values)
@@ -112,8 +116,8 @@ namespace Units
             var unitsArray = selectedUnits.Values.ToArray();
             var worker = (Worker)unitsArray[0];
             worker.NeedWork = true;
-            worker.MoveToWork(targetPosition, WorkType.None, resource);
-            for (int i = 1; i < selectedUnitsCount; i++)
+            worker.MoveToWork(targetPosition, resource);
+            for (var i = 1; i < selectedUnitsCount; i++)
             {
                 var patternIndex = i % countOfUnitsInOneLine;
                 worker = (Worker)unitsArray[i];
@@ -121,12 +125,12 @@ namespace Units
                 if (patternIndex == 0)
                 {
                     targetPosition.z -= unitOffset * i / countOfUnitsInOneLine;
-                    worker.MoveToWork(targetPosition, WorkType.None, resource);
+                    worker.MoveToWork(targetPosition, resource);
                 }
                 else
                 {
                     var moveOffset = new Vector3(unitOffset * unitsStandPattern[patternIndex], 0f, 0f);
-                    worker.MoveToWork(targetPosition + moveOffset, WorkType.None, resource);
+                    worker.MoveToWork(targetPosition + moveOffset, resource);
                 }
             }
         }
@@ -135,7 +139,7 @@ namespace Units
         {
             var unitsArray = selectedUnits.Values.ToArray();
             unitsArray[0].Move(targetPosition);
-            for (int i = 1; i < selectedUnitsCount; i++)
+            for (var i = 1; i < selectedUnitsCount; i++)
             {
                 var patternIndex = i % countOfUnitsInOneLine;
                 if (patternIndex == 0)
@@ -181,7 +185,7 @@ namespace Units
         {
             var standPattern = new int[unitsCount];
             var patternValue = 1;
-            for (int i = 1; i < unitsCount; i += 2)
+            for (var i = 1; i < unitsCount; i += 2)
             {
                 standPattern[i] = patternValue;
                 standPattern[i + 1] = -patternValue;

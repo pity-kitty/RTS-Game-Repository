@@ -5,7 +5,7 @@ namespace Units.Interfaces
 {
     public interface IWorkable
     {
-        public bool StartWork(WorkType work, Resource resource);
+        public bool StartWork(Resource resource);
         public void EndWork();
     }
 }
